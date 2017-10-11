@@ -2,13 +2,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
-@media(min-width: 660px) {
-  background-image: url(".assets/images/kats-hero-mobile.jpg");
-  background-repeat: no-repeat;
-}
-/* On devices wider than 940px */
-@media(min-width: 940px) {
   h1 {
     font-family: PT Sans Narrow Bold, sans-serif;
     font-size: 1.875em;
@@ -39,12 +32,14 @@ body {
   }
   nav {
     height: 80px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
   nav h1 {
     font-family:PT Sans Narrow Bold, sans-serif;
     font-size: 1.5em;
     color: #323232;
-    float: left;
     margin-top: 35px;
   }
   nav p {
@@ -52,19 +47,20 @@ body {
     font-size: .9em;
     color: #323232;
     display: inline-block;
-    float: right;
     width: 25px;
     padding-right: 20px;
     margin-right: 30px;
     margin-top: 35px;
   }
-  .float-left {
+  /*.float-left {
     margin-left: 950px;
     float: left;
-  }
+  }*/
   footer {
     background-color: #00897f;
-    height: 75%;;
+    height: 75%;
+    display: flex;
+    justify-content: center;
   }
   footer h1 {
     font-family: PT Sans Narrow Bold, sans-serif;
@@ -74,19 +70,14 @@ body {
   }
   footer img {
     width: 100%;
+    display: flex;
   }
   .splash {
     width: 100%;
-  }
-  .img1 {
-    position: relative;
-    z-index: 1;
-  }
-  .img2 {
-    position: relative;
-    z-index: 2;
+    display: flex;
   }
   .main {
+    display: flex;
     margin: 0 auto;
     padding: 0;
     width: 100%;
@@ -97,13 +88,17 @@ body {
     margin: 0 auto;
     padding-bottom: 25px;
     width: 50%;
+    display: flex;
+    justify-content: center;
   }
   .intro h1 {
     text-align: center;
   }
   .bios {
+    display: flex;
     width: 50%;
     margin: 0 auto;
+    justify-content: space-between;
   }
   .kat {
     float: left;
@@ -128,16 +123,12 @@ body {
     padding: 10px;
   }
   .cool-cats {
-    display: block;
+    display: flex;
     height: auto;
     width: 100%;
     margin-left: 15%;
   }
   .cool-cats img {
-    /*min-height: 36%;
-    min-width: 30%;
-    max-width: 30%;
-    max-height: 36%;*/
     margin: 0 auto;
     width: 200px;
     height: 200px;
@@ -148,26 +139,23 @@ body {
   .scoot {
     margin-right: 3%;
   }
-  /*.main_2 {
-    text-align: center;
-    margin: 0 auto;
-    height: 405px;
-  }*/
   .main-2 {
     margin: 0 auto;
     background-color: #eeeeee;
     height: 400px;
+    display: flex;
+    justify-content: space-between;
   }
   .main-2 h1 {
     text-align: center;
-  padding: 40px 0 0 35px;
+    padding: 40px 0 0 35px;
   }
   .hours {
     background-color: white;
     display: inline-block;
     width: 20%;
     height: 200px;
-    float: left;
+    /*float: left;*/
     padding: 15px;
     padding-bottom: 25px;
     margin-left: 25%;
@@ -177,145 +165,8 @@ body {
     background-color: white;
     width: 20%;
     height: 200px;
-    float: right;
+    /*float: right;*/
     padding: 15px;
     padding-bottom: 25px;
     margin-right: 25%;
   }
-}
-/*le old code for reference*/
-/*body {
-  margin: 0;
-}
-h1 {
-  font-family: PT Sans Narrow Bold, sans-serif;
-  font-size: 1.875em;
-  color: #323232;
-}
-h2 {
-  font-family: PT Sans Narrow Bold, sans-serif;
-  font-size: 1.5em;
-  color: #00897f;
-  text-transform: uppercase;
-}
-h3 {
-  font-family: PT Serif Regular, serif;
-  font-size: 1em;
-  line-height: 2em;
-  color:#323232;
-}
-p {
-  font-family: PT Serif Regular, serif;
-  font-size: .875em;
-  color: #323232;
-}
-a {
-  font-family: PT Serif Bold, serif;
-  font-size: 1em;
-  color:#f26522;
-}
-nav {
-  height: 80px;
-}
-nav h1 {
-  font-family:PT Sans Narrow Bold, sans-serif;
-  font-size: 1.5em;
-  color: #323232;
-}
-nav p {
-  font-family: PT Sans Regular, sans-serif;
-  font-size: .9em;
-  color: #323232;
-  float: right;
-  display: block;
-  position: relative;
-  top: 15px;
-}
-footer h1 {
-  font-family: PT Sans Narrow Bold, sans-serif;
-  font-size: 1.25em;
-  color: #323232;
-  text-align: center;
-}
-footer img {
-  width: 100%;
-}
-.main {
-  margin: 0 auto;
-  width: 700px;
-}
-.main_2 {
-  margin: 0 auto;
-  width: 700px;
-  background-color: #eeeeee;
-}
-.intro {
-  margin: 0 auto;
-}
-.intro h1 {
-  text-align: center;
-}
-.kat {
-  float: left;
-  width: 50%;
-  background-color: #eeeeee;
-  height: 250px;
-}
-.mavis {
-  float: right;
-  width: 50%;
-  background-color: #eeeeee;
-  height: 250px;
-}
-.kat h2 {
-  text-align: center;
-  padding: 25px;
-}
-.mavis h2 {
-  text-align: center;
-  padding: 25px;
-}
-.cool-cats {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-}
-.main_2 {
-  text-align: center;
-  margin: 0 auto;
-  height: 405px;
-}
-.main_2 h1 {
-  text-align: center;
-padding: 40px 0 0 35px;
-}
-.hours {
-  background-color: white;
-  display: inline-block;
-  width: 250px;
-  height: 200px;
-  float: left;
-  margin-left: 50px;
-  padding: 15px;
-}
-.contact {
-  display: inline-block;
-  background-color: white;
-  width: 250px;
-  height: 200px;
-  float: right;
-  margin-right: 50px;
-  padding: 15px;
-}
-.center {
-  text-align: center;
-}
-.fix-it {
-  padding: 15px;
-}
-@media(min-width: 660px) {
-}
-
-/* On devices wider than 940px
-@media(min-width: 940px) {
-}*/
