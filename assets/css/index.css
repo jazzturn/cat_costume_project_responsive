@@ -145,7 +145,6 @@ body {
   }
   .justify {
     display: flex;
-    height: 100%;
     justify-content: space-evenly;
     margin-top: 120px;
   }
@@ -317,7 +316,6 @@ body {
     .justify {
       display: flex;
       justify-content: space-evenly;
-      height: 100%;
     }
     .main-2 h1 {
       justify-content: center;
@@ -353,7 +351,6 @@ body {
   }
   .justify {
     display: flex;
-    height: 100%;
     flex-direction: column;
     align-items: center;
   }
@@ -437,7 +434,6 @@ body {
   }
   .justify {
     display: flex;
-    height: 100%;
     flex-direction: column;
   }
   .hours {
@@ -498,5 +494,35 @@ body {
   footer img {
     width: 100%;
     height: 100px;
+  }
+  .main-2 {
+    margin: 0 auto;
+    background-color: #eeeeee;
+    height: 790px;
+  }
+  .justify {
+    display: flex;
+    flex-direction: column;
+  }
+  .hours {
+    background-color: white;
+    display: flex;
+    width: 250px;
+    height: 260px;
+    /*float: left;*/
+    padding: 15px;
+    padding-bottom: 25px;
+    flex-direction: column;
+  }
+  .contact {
+    display: flex;
+    background-color: white;
+    width: 250px;
+    height: 260px;
+    /*float: right;*/
+    padding: 15px;
+    padding-bottom: 25px;
+    flex-direction: column;
+    margin-top: 35px;
   }
 }
